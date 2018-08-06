@@ -1,0 +1,23 @@
+{
+  "name": "localdevjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files ./**/*",
+    "handlebars": "handlebars templates/ -f compiled.js",
+    "watchify": "watchify src/main.js -o bundle.js -v",
+    "browserify": "browserify src/main.js -o bundle.js -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.6"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.3.1"
+  }
+}
