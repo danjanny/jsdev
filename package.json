@@ -6,8 +6,8 @@
   "scripts": {
     "start": "browser-sync start --server --files ./**/*",
     "handlebars": "handlebars templates/ -f compiled.js",
-    "watchify": "watchify src/main.js -o bundle.js -v",
-    "browserify": "browserify src/main.js -o bundle.js -v"
+    "watchify": "watchify src/js/main.js -o bundle.js -v",
+    "browserify": "browserify src/js/main.js -o bundle.js -v"
   },
   "keywords": [],
   "author": "",
