@@ -1,3 +1,3 @@
 var app = (function() {
-    console.log('Hello');
+    console.log('Hello ');
 })();
