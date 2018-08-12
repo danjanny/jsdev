@@ -7,7 +7,8 @@
     "start": "browser-sync start --server --files ./**/*",
     "handlebars": "handlebars templates/ -f compiled.js",
     "watchify": "watchify src/js/main.js -o bundle.js -v",
-    "browserify": "browserify src/js/main.js -o bundle.js -v"
+    "browserify": "browserify src/js/main.js -o bundle.js -v",
+    "babel": "npx babel --watch src --out-dir . --presets react-app/prod"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "handlebars": "^4.0.11",
     "jquery": "^3.3.1"
   }
